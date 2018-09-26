@@ -11,11 +11,13 @@
     <div @click="countUp">+</div>
     <div @click="countDown">-</div>
     <myvuex></myvuex>
+    <mymapState></mymapState>
   </div>
 </template>
 
 <script>
-import myvuex from './components/vuex'
+import myvuex from './components/vuex';
+import mymapState from './components/mapState';
 export default {
   name: 'App',
   data(){
@@ -25,6 +27,7 @@ export default {
   },
   components:{
     myvuex,
+    mymapState,
   },
   mounted(){
     console.log(this.$store.state.count)
