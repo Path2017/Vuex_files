@@ -8,10 +8,14 @@
     <div>
       {{$store.state.count}}
     </div>
+    <div @click="countUp">+</div>
+    <div @click="countDown">-</div>
+    <myvuex></myvuex>
   </div>
 </template>
 
 <script>
+import myvuex from './components/vuex'
 export default {
   name: 'App',
   data(){
@@ -19,11 +23,21 @@ export default {
 
     }
   },
+  components:{
+    myvuex,
+  },
   mounted(){
     console.log(this.$store.state.count)
   },
   methods:{
-
+    // 增加count 
+    countUp(){
+      this.$store.commit('add');
+    },
+    // 减少count
+    countDown(){
+      this.$store.commit('reduce');
+    }
   }
 }
 </script>
