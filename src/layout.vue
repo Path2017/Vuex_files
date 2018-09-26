@@ -2,12 +2,29 @@
   <div id="app">
     <img src="./assets/logo.png">
     <router-view/>
+    <div>
+      vuex 测试区域
+    </div>
+    <div>
+      {{$store.state.count}}
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  data(){
+    return{
+
+    }
+  },
+  mounted(){
+    console.log(this.$store.state.count)
+  },
+  methods:{
+
+  }
 }
 </script>
 
