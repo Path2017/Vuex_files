@@ -13,7 +13,7 @@ import { mapState } from "vuex";
 export default {
   data() {
     return {
-      data: 123
+      data: 123,
     };
   },
   computed: {
