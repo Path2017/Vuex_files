@@ -5,6 +5,7 @@
     <div>
       vuex 测试区域
     </div>
+    <div id="jq"></div>
     <div>
       {{$store.state.count}}
     </div>
@@ -32,6 +33,7 @@ export default {
   mounted(){
     console.log(this.$store.state.count)
     console.log(this.reqpath)
+    $('#jq').html('测试jquery')
   },
   methods:{
     // 增加count 

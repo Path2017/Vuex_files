@@ -10,6 +10,9 @@ import store from './store'
 // 引入url
 import reqpath from '../config/urlconfig'
 Vue.prototype.reqpath = reqpath;
+// 引入jquery
+import $ from 'jquery'
+Vue.prototype.$ = $
 
 /* eslint-disable no-new */
 new Vue({
