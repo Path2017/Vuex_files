@@ -31,6 +31,7 @@ export default {
   },
   mounted(){
     console.log(this.$store.state.count)
+    console.log(this.reqpath)
   },
   methods:{
     // 增加count 

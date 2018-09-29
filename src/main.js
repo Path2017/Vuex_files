@@ -5,14 +5,17 @@ import Layout from './layout'
 import router from './router'
 
 Vue.config.productionTip = false
-// 引入vuex
+    // 引入vuex
 import store from './store'
+// 引入url
+import reqpath from '../config/urlconfig'
+Vue.prototype.reqpath = reqpath;
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  router,
-  store,
-  components: { Layout },
-  template: '<Layout/>'
+    el: '#app',
+    router,
+    store,
+    components: { Layout },
+    template: '<Layout/>'
 })
