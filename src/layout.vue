@@ -2,7 +2,6 @@
   <div id="app">
     <router-view/>
     <img src="./assets/logo.png">
-    <router-view/>
     <div>
       vuex 测试区域
     </div>

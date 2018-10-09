@@ -13,6 +13,14 @@ Vue.prototype.reqpath = reqpath;
 // 引入jquery
 import $ from 'jquery'
 Vue.prototype.$ = $
+    // vue-quill-editor
+import VueQuillEditor from 'vue-quill-editor'
+// require styles 引入样式
+import 'quill/dist/quill.core.css'
+import 'quill/dist/quill.snow.css'
+import 'quill/dist/quill.bubble.css'
+
+Vue.use(VueQuillEditor)
 
 /* eslint-disable no-new */
 new Vue({
